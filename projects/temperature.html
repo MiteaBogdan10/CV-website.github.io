@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Library activity management</title>
+  <title>Temperature sensor</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -43,15 +43,24 @@
 
           <div class="col-lg-12 portfolio-info">
             <br>
-            <h2 style="color:#12d640">Library activity management</h2>
+            <h2 style="color:#12d640">Temperature sensor</h2>
 
             <ul>
-              <li><strong>Tech Stack</strong>: ASP.NET, C# and CSS</li>
-              <li><strong>Github URL</strong>: <a href="https://github.com/MiteaBogdan10/P5-T11-MihaiMiteaNicu" target="_blank">Project Link</a></li>
+              <li><strong>Tech Stack</strong>: Tinkercad, Arduino, C/C++ </li>
+              <li><strong>Project URL</strong>: <a href="https://www.tinkercad.com/things/5jwcAgirlSI" target="_blank">Project Link</a></li>
             </ul>
 
             <p>
-              The application will allow the management of books in a library's holdings, loans and reservations made within the library.            
+              The circuit contains 2 Arduino boards connected in series, an LCD, a buzzer, a temperature sensor and 2 LEDs of different colours: green and red.
+              We have 4 cases in terms of temperature and LED lighting:
+
+              a)When the temperature is less than 15 degrees, both LEDs will remain off and only the temperature will be displayed on the LCD.
+
+              b)For temperatures between 15 and 30 degrees, the green LED lights up, the red LED is off, and the temperature is displayed on the LCD in both Celsius and Fahrenheit.  
+              
+              c)For temperatures between 30 and 45 degrees, the red LED lights up, the green LED goes out and the temperature is displayed on the LCD.
+
+              d)For temperatures over 45 degrees, the red LED lights up, the green LED goes out, the buzzer goes off and the temperature is displayed on the screen.
             </p>
           </div>
 
