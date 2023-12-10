@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Design Website NFT</title>
+  <title>Christmass Installation</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -43,15 +43,29 @@
 
           <div class="col-lg-12 portfolio-info">
             <br>
-            <h2 style="color:#12d640">Design Website NFT</h2>
+            <h2 style="color:#12d640">Christmass Installation</h2>
 
             <ul>
-              <li><strong>Tech Stack</strong>: Figma </li>
-              <li><strong>Project URL</strong>: <a href="https://www.figma.com/proto/bcU7Kqg4xitOl9HSYnnUhe/Design-Website-NFT?type=design&node-id=202-2&t=MMRDXBF2g8rF8qpX-1&scaling=min-zoom&page-id=0%3A1&mode=design" target="_blank">Project Link</a></li>
+              <li><strong>Tech Stack</strong>: C/C++, Arduino, Tinkercad </li>
+              <li><strong>Project URL</strong>: <a href="https://www.tinkercad.com/things/gUmHsZVDA0O-instalatie-de-craciun" target="_blank">Project Link</a></li>
             </ul>
 
             <p>
-              I tried to create a design of a NFTs website using Figma where the information is divided into several sections to make it easier for the user to view the interface of the site, and on the beautification side of the site the colors and effects are well combine to be pleasing to the eye.
+              <b>Setup:</b>
+                I added three Arduino boards and the following components -> switch, LEDs, buzzer, potentiometer.
+
+                I connected the three Arduino boards as follows:
+                The first Arduino board and the second Arduino board communicate with each other via the UART interface.
+                The first Arduino board and the third Arduino board communicate with each other via the I2C interface.
+
+              <b>Functionality:</b>
+                The switch on the first Arduino board must be activated to start the installation. When the switch is activated, all the LEDs on the second Arduino board will light up; when the switch is deactivated, the system will switch off.
+
+                Depending on the Potentiometer value on the third Arduino board we have the following conditions:  
+                In the range 0-25%: all LEDs on the second Arduino board will light up;
+                In the range 26%-50%: the LEDs on the second Arduino board will light up sequentially (order does not matter) to infinity;
+                In the range 51%-75% the LEDs on the second Arduino board will turn on and off with the Fade effect;
+                In the range 76%-100%: the LEDs on the second Arduino board will turn on and off with the Fade effect, and the Buzzer will turn on following the Jingle Bells melody line.
             </p>
           </div>
 
