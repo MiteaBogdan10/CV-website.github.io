@@ -2,7 +2,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Christmass Installation</title>
+  <title>Intercom with Microcontroller</title>
   <meta content="" name="descriptison">
   <meta content="" name="keywords">
 
@@ -43,29 +43,22 @@
 
           <div class="col-lg-12 portfolio-info">
             <br>
-            <h2 style="color:#12d640">Christmass Installation</h2>
+            <h2 style="color:#12d640">Intercom with Microcontroller</h2>
 
             <ul>
-              <li><strong>Tech Stack</strong>: C/C++, Arduino, Tinkercad </li>
-              <li><strong>Project URL</strong>: <a href="https://www.tinkercad.com/things/gUmHsZVDA0O-instalatie-de-craciun" target="_blank">Project Link</a></li>
+              <li><strong>Tech Stack</strong>: C/C++, Microcontroller, Microchip Studio, SimulIDE </li>
+              <li><strong>Project Video</strong>: 
+                <div style="padding:52.39% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/981986739?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Interfon_Micro"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            </li>
+              <li><strong>Github URL</strong>: <a href="https://github.com/MiteaBogdan10/interfon_microcontroller/tree/master" target="_blank">Project Link</a></li>
             </ul>
 
             <p>
               <b>Setup:</b>
-                I added three Arduino boards and the following components -> switch, LEDs, buzzer, potentiometer.
-
-                I connected the three Arduino boards as follows:
-                The first Arduino board and the second Arduino board communicate with each other via the UART interface.
-                The first Arduino board and the third Arduino board communicate with each other via the I2C interface.
-
-              <b>Functionality:</b>
-                The switch on the first Arduino board must be activated to start the installation. When the switch is activated, all the LEDs on the second Arduino board will light up; when the switch is deactivated, the system will switch off.
-
-                Depending on the Potentiometer value on the third Arduino board we have the following conditions:  
-                In the range 0-25%: all LEDs on the second Arduino board will light up;
-                In the range 26%-50%: the LEDs on the second Arduino board will light up sequentially (order does not matter) to infinity;
-                In the range 51%-75% the LEDs on the second Arduino board will turn on and off with the Fade effect;
-                In the range 76%-100%: the LEDs on the second Arduino board will turn on and off with the Fade effect, and the Buzzer will turn on following the Jingle Bells melody line.
+              Part of an intercom application for 8 apartments will be implemented. The intercom is equipped with with a 16-key keypad and 2x16 LCD. In the initial state the intercom allows access in two modes:
+                
+              1. In the first mode one of the keys 1..8 is pressed and the Intercom calls the apartment corresponding to the digit pressed. If the called apartment activates the cmd signal within 15 seconds, the intercom will will open the electric lock of the door, allowing access. However, if within 15 seconds cmd is activated, the intercom returns to its initial state.  
+              2. In the second access mode, press the 'c' key and then enter three decimal digits. If the 3 digits is the predefined access code, the intercom opens the electric lock and allows access, otherwise the otherwise it returns to its initial state. It follows from the description of the mode of operation that the intercom behaves differently even if the pressed is the same. For example, if in the initial state '2' is pressed, the intercom will ring at apartment 2, but if first 'c' and then '2' is pressed, this '2' is the first digit of the code and the intercom will memorize it without ringing apartment 2.  
             </p>
           </div>
 
